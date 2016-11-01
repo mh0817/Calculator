@@ -275,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 411);
+            this.ClientSize = new System.Drawing.Size(384, 461);
             this.Controls.Add(this.Disp_Calc_Symbol);
             this.Controls.Add(this.Display_Calc_Number);
             this.Controls.Add(this.button_Equal);
@@ -296,6 +296,9 @@
             this.Controls.Add(this.button_No5);
             this.Controls.Add(this.button_No6);
             this.Controls.Add(this.button_No7);
+            /*-----ウィンドウの上部ボタン除外 -----*/
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(400, 500);
             this.Name = "Calculator";
             this.Text = "Form1";
             this.ResumeLayout(false);
